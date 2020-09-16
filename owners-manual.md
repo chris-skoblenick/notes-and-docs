@@ -1,5 +1,5 @@
 Christopher Skoblenick
-Owners Manual v1.0
+Owners Manual v1.1
 
 # Personality
 
@@ -19,6 +19,7 @@ Owners Manual v1.0
 - being okay with average
 - accepting errors, disorganization and broken processes because that's how it always was.
 - not delivering on promises: do not commit if you cannot produce, just say no when asked.
+- having an overly managed appearance; politics, focus on social norms over honesty.
 
 
 # Operating Environment:
@@ -73,5 +74,3 @@ Owners Manual v1.0
 - Perfectionist
 - Difficulty multi-tasking many short-term tasks
 - Acting when there is no time for analysis
-- Tends to avoid social interaction
-- Under relies on the team, over-relies on being required.
