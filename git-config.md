@@ -1,4 +1,5 @@
-# .gitconfig
+# ~/.gitconfig
+
 Here are the aliases I use:
 ```
 [alias]
