@@ -2,7 +2,7 @@
 
 ## How to modify
 1. `nano ~/.gitconfig`
-2. Add the aliases to the bottom of the file
+2. Add the contents into the file.
 
 ## Aliases
 ```
