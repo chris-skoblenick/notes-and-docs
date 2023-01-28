@@ -34,9 +34,11 @@ zstyle ':vcs_info:git:*' formats '(%b)'
 # NOTES:
 # - %#   -->  show # if the shell is running with root (administrator) privileges, or % if it doesn’t.
 # - %F{colour_name} ... %f  --> change the color between %F and %f. Supports black, white, yellow, green, red, blue, cyan, magenta. %F is 
-foreground, %B is background.
+foreground
+# - %B ... %b  --> bold the contents
+# - %S ... %s  --> highlight (background) colour
 
 # Add the git details to the prompt
 setopt PROMPT_SUBST
-PROMPT='%F{cyan}${PWD/#$HOME/~}%f %F{red}${vcs_info_msg_0_}%f %# '
+PROMPT='%B%F{cyan}${PWD/#$HOME/~}%f%b %F{red}${vcs_info_msg_0_}%f %# '
 ```
