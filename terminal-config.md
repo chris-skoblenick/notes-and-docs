@@ -1,10 +1,14 @@
-# ~/.gitconfig
+# What it this?
+Some common terminal setup I use on my devices
 
-## How to modify
+
+## ~/.gitconfig
+
+### How to modify
 1. `nano ~/.gitconfig`
 2. Add the contents into the file.
 
-## Aliases
+### Aliases
 ```
 [alias]
         l = log --date=short --pretty=format:'%C(bold blue)%cd %Creset%C(red)%h%Creset%C(auto)%d %Creset%C(normal)%s %Creset%C(bold blue)(%Creset%C(yellow)%an %Creset%C(bold blue)%cr)%Creset' --color --graph --decorate
