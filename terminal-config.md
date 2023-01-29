@@ -16,7 +16,7 @@ Defines some git aliases.
 ## ~/.zshrc
 Configures z shell
 
-### Contents:
+### Show git details:
 ```
 # Show git information
 # Reference: https://www.themoderncoder.com/add-git-branch-information-to-your-zsh-prompt/
