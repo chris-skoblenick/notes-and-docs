@@ -33,8 +33,7 @@ zstyle ':vcs_info:git:*' formats '(%b)'
 # Reference: https://www.makeuseof.com/customize-zsh-prompt-macos-terminal/
 # NOTES:
 # - %#   -->  show # if the shell is running with root (administrator) privileges, or % if it doesn’t.
-# - %F{colour_name} ... %f  --> change the color between %F and %f. Supports black, white, yellow, green, red, blue, cyan, magenta. %F is 
-foreground
+# - %F{colour_name} ... %f  --> change the color between %F and %f. Supports black, white, yellow, green, red, blue, cyan, magenta. %F is foreground
 # - %B ... %b  --> bold the contents
 # - %S ... %s  --> highlight (background) colour
 
