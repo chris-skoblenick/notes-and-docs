@@ -41,7 +41,13 @@ zstyle ':vcs_info:git:*' formats '(%b)'
 setopt PROMPT_SUBST
 PROMPT='%B%F{cyan}${PWD/#$HOME/~}%f%b %F{red}${vcs_info_msg_0_}%f %# '
 ```
-## Turn off mouse acceleration in OSX
+
+## System-level adjustments for OSX
+### Turn off mouse acceleration
 ```
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
+```
+### Turn of mouse wheel acceleration
+```
+defaults write .GlobalPreferences com.apple.scrollwheel.scaling 0
 ```
