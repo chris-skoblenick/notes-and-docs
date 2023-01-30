@@ -47,7 +47,7 @@ PROMPT='%B%F{cyan}${PWD/#$HOME/~}%f%b %F{red}${vcs_info_msg_0_}%f %# '
 ```
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
 ```
-### Turn of mouse wheel acceleration
+### Turn off mouse wheel acceleration
 ```
 defaults write .GlobalPreferences com.apple.scrollwheel.scaling 0
 ```
