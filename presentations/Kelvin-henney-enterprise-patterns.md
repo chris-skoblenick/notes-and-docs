@@ -2,9 +2,10 @@
 Kevlin Henney
 
 # Summary
-* The "promised land" of Enterprise Programming Patterns do not mean your software is clean
-* Finding a balance between using a software development pattern and doing it simply.
-* Object Oriented can be taken way too far
+* The "promised land" of Enterprise Programming Patterns do not mean your software is clean.
+* Object Oriented can be taken way too far.
+* Blind obedience to "best practice" doesn't mean your code is "clean".
+* Clean code isn't stuff with patterns & checks, it's only what is absolutely necessary.
 
 # Link
 https://www.youtube.com/watch?v=FyCYva9DhsI
@@ -43,10 +44,12 @@ https://www.youtube.com/watch?v=FyCYva9DhsI
     * Instead of `ConfigurationManager`, maybe it should just be called `Configuration`?
     * Instead of `ConditionChecker`, maybe just `Condition`? Or if you can define lambdas, why even have them to begin with as a class?
   * When naming, treat the initial name as fluid, until you understand enough about it to reduce it's name to only what is essential.
-
-
-
-# Takeaway Questions
-* Why apply these architecture patterns if they're not needed?
-* When are architectural patterns (to achieve DRY) an improvement?
-  * When do they harm?
+* (~50:00) Interesting (overlooked) anti-patterns
+  * Mixed Levels of Abstraction
+    * As a reader, I have an expected (and consistent) level of abstraction when looking at code
+    * When it jumps suddenly from high level to very low, it can feel like a rollercoaster.
+    * Ideally, design your code such that it's consistently stratified by abstraction level, or wade them in slowly.
+* (~60:00) When he refactored the function, it wasn't by applying a bunch of enterprise patterns, it was making it read more easily by taking it down to only what was absolutely necessary (in the case of his function, nothing).
+    * Instead of comments above blocks, turn them into private functions
+    * Instead of declaring all your variables together, co-locate the variable declaration with the block which acts upon it
+    * Question everything; instead of boilerplate and checks, find ways to avoid writing code at all.
