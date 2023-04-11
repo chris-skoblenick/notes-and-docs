@@ -1,9 +1,11 @@
 # What is this?
 A collection of longer form reviews and deep-dives of other people's presentations about technical topics I am interested in.
 
+# Index
+* (just look at folder structure; may fill this in if I stick with it long enough?)
 
 
-# Backlog
+# Future Additions?
 * [High-level overview of Software Design Patterns](https://www.youtube.com/watch?v=aiSAO2AXa9g)
   * Would like to find concise videos to support the overview; most of the videos are way too high level, or unnecessarily in-depth.
 
