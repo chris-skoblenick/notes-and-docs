@@ -1,8 +1,9 @@
 # What is this?
-A semi-organized backlog of videos for future deeper dives & note taking.
+A collection of longer form reviews and deep-dives of other people's presentations about technical topics I am interested in.
 
 
-# Contents
+
+# Backlog
 * [High-level overview of Software Design Patterns](https://www.youtube.com/watch?v=aiSAO2AXa9g)
   * Would like to find concise videos to support the overview; most of the videos are way too high level, or unnecessarily in-depth.
 
