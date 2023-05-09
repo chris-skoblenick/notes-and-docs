@@ -14,9 +14,6 @@ A collection of longer form reviews and deep-dives of other people's presentatio
   * [Part 2 - Saga Pattern](https://www.youtube.com/watch?v=C0rGwyJkDTU)
   * [Part 3 - Event Sourcing & CQRS](https://www.youtube.com/watch?v=i2eVTk2Fb40)
 
-* [Growing as a Technical Lead](https://www.youtube.com/watch?v=DOwxbjqPnwM)
-  * How to be a "not crap" technical lead. Pitched as "how to grow technical leads in house"
-
 
 # Unsorted Playlist
 * https://www.youtube.com/playlist?list=PLo1uo7C1_PfZCON3rXMkkJt5WkDRmT0uv
