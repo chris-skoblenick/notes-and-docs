@@ -37,7 +37,8 @@
   * Our code should be easy to read, and too small can cause readability/length issues
   * Naming is *very* hard. Trying to provide good quality names is that much harder when the number of functions explodes
   * Of all the things within the book, this is the one which I feel has aged the least well
-  * Instead, I prefer **deep** functions; ones which are worth their weight
+  * I generally prefer the concepts raised by "A Philosophy of Software Design"
+     * Prefer *deep* functions over shallow ones; something with a simple interface which hides complex details 
 * Functions should only do one thing, and do it well
   * Using "And" as a code smell
 * One level of abstraction per function context
