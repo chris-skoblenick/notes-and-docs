@@ -101,3 +101,21 @@
     * His raise is that modern IDEs and colour coding make this less important, which I generally agree with.
   * Use consistent indentation to define your blocks
 * Team rules: the whole team should be using a single style. It shouldn't be possible to tell who authored based on the style.
+
+
+## Chapter 6 - Objects and Data Structures
+* Abstraction is not about adding layers, it's about allowing users to manipulate it without having to know its implementation.
+  * Offer verbs like "throwBall" not just "setX" methods.
+* Law of Demeter: "a module should not know about the innards of the objects it manipulates."
+* Data Transfer Objects (DTOs) - a structure to allow modules/systems to communicate with eachother in an agreed upon structure (not that it's best suited for anything aside from the transfer)
+
+
+## Chapter 7 - Error Handling
+* Mental framing: try-catch-finally blocks are like transactions
+  * Need to think about what happens when the unexpected happens; how should recoveries be done (if at all?) 
+* Each exception you throw should provide context to allow it to actually be debugged
+  * Noting it's happened is great, but that's often only the first step in debugging!
+  * Especially true in minified environments!
+* Generally, returning `null` is a code smell.
+  * I think this is fine as a general situation, however using it as a blanket rule can assume the user isn't trying to do things like "does X exist"
+* Generally, passing `null` is a code smell
