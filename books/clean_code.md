@@ -119,3 +119,40 @@
 * Generally, returning `null` is a code smell.
   * I think this is fine as a general situation, however using it as a blanket rule can assume the user isn't trying to do things like "does X exist"
 * Generally, passing `null` is a code smell
+
+## Chapter 8 - Boundaries
+* As we don't own 3rd party code, there should be a very clear boundary to control how much influence they have over the structure of our application
+  * Domain Driven Design as this concept taken to the extreme
+  * Anti-Corruption Layer: contains breaking changes to the 3rd party library without spreading over the entire application
+* Providers of 3rd party code seek to make broad tools to serve a wide range of uses. We want an implementation tailed to our specific application goals.
+  * We would much prefer to have functions/objects/methods tightly suited to our purpose than have to infer what we need to do given the libraries we have chosen.
+* By having a layer of indirection between the libraries we choose, and the application behaviour we want, we can change/refactor over time
+* (DISAGREEMENT): adding tests on 3rd party code. If the 3rd party library changes/breaks, our tests should fail, otherwise we shouldn't be using the library to solve our needs?
+* If we have our application offer functionality which isn't yet supported, we can just replace our implementation once it does exist
+
+## Chapter 9 - Tests
+* TDD is fine in principle, but does tend to lead to bloated test suites, because we're testing our code, not the product we're writing
+  * BDD seems like an "evolved" way of approaching TDD, without the same maintenance issues
+* (single concept per test, single assert per test)
+  * this leads to very lengthy test suites to maintain over the life of the product, and acts as an inhibitor to refactoring & simplification
+* F.I.R.S.T
+  * Fast: should execute quickly.
+  * Independent: should not depend on each other. (I feel overlapping is fine, and sometimes necessary?)
+  * Repeatable: should be dependable and able to run in every environment
+  * Self-Validating: should have a boolean output. Either they pass or fail.
+  * Timely: should be written just before the production code that makes them pass. If you write tests after the production code, then you may find the production code to be hard to test.
+ 
+## Chapter 10 - Classes
+* Encapsulation: this one I feel really strongly about, and is vital to good software design. Only expose what must be exposed; default posture should be "it's private".
+  * I disagree with "sometimes we should make it public for a test"; I feel if it's vital to the functioning of our system, it should be inherently (rather than explicitly) tested.
+* (DISAGREEMENT) Size: "Classes should be small" - I disagree with this one, and much prefer the idea of depth from "A Philosophy of Software Design" - https://www.youtube.com/watch?v=bmSAYlu0NcY
+  * If I'm going to take on the cognitive load of understanding a new name & it's purpose, I want to ensure it pulls it's weight.
+  * Heavily fragmented classes can make a system VERY hard to understand; constantly wondering why this exists. 
+* Should have one reason to change (SRP) - I largely agree with this, and the ethos behind it.
+  * I am very interested in the CUPID idea, pushed by Dan North
+* Cohesion: a pretty good lens to look through to decide when classes should be split/combined.
+  * Classes should have a small number of instance variables. Methods should seek to change many of them, as the surface area offerings are more cohesive
+* Isolation from change: things should be split/organized to prevent changes snaking all over the codebase
+  * This would also improve readability, and I believe supports the concept of "deep" classes (which I also believe fights against the "small" classes)
+  * Use abstracts, interfaces, etc as methods to improve isolation.
+    * I strongly feel like abstracts are over used, and interfaces is a much better way to actually have isolation. (Composition over Inheritance)
