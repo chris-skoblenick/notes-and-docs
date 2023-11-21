@@ -156,3 +156,12 @@
   * This would also improve readability, and I believe supports the concept of "deep" classes (which I also believe fights against the "small" classes)
   * Use abstracts, interfaces, etc as methods to improve isolation.
     * I strongly feel like abstracts are over used, and interfaces is a much better way to actually have isolation. (Composition over Inheritance)
+   
+## Chapter 11 - Systems
+* metapohore: A computer solution as a city, along with specializations, overseers & sectors
+  * easy for software to all ball together; with diligence we **can** keep the separation
+* "construction should be kept separate from use"
+  * separate startup/bootstrap from operation
+* "we should implement only today's stories, then refactor and expand the system to implement new stories for tomorrow"
+  * to do this, we **must** maintain proper separations of concerns (keep the specialiation alive within the city)
+* enable growth by really focusing on modularity & clear boundaries
