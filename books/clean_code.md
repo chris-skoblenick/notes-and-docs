@@ -165,3 +165,20 @@
 * "we should implement only today's stories, then refactor and expand the system to implement new stories for tomorrow"
   * to do this, we **must** maintain proper separations of concerns (keep the specialiation alive within the city)
 * enable growth by really focusing on modularity & clear boundaries
+
+## Chapter 12 - Emergence
+* Context: "Getting Clean via Emergent Design"
+* (from Kent Beck) a design is "simple" if it follows these rules (in order)
+  * Runs all the tests
+  * Contains no duplication
+  * Expresses the intent of the programmer
+  * Minimizes the number of classes and methods
+  * CS: I don't feel this captures it very well..
+    * #1 has nothing to do with the design. I feel like tests are "table stakes" for implementation.
+    * #2 can be taken way too far, and can make things really convoluted. There's a difference between coupled & coincidentally the same. We can make refactoring painful & complexity explode if the two of them are confused.
+    * #3 feels wrong; it should be "the code minimimally implements the desired behaviour"; the programmer is NOT the stakeholder!
+    * #4 I agree with, but could also be taken too far. Often I find it's not taken far enough though
+      * I like the quote "High class and method counts are sometimes the result of pointless dogmatism" -- I find many of the Uncle Bob purists can get caught here, and may of the "best pratices" cause this.
+* Expressiveness: the code should express the purpose using mechanisms inherent in the system, rather than relying on the dev fully understanding the entire codebase to make sense of it
+  * Examples: choosing good names which suggest domain + pattern usage (where relevant).
+* Personal thoughts; I much prefer the "A Philosophy of Software Design" or the CUPID patterns to the ones suggested here.
