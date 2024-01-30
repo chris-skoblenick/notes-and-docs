@@ -182,3 +182,32 @@
 * Expressiveness: the code should express the purpose using mechanisms inherent in the system, rather than relying on the dev fully understanding the entire codebase to make sense of it
   * Examples: choosing good names which suggest domain + pattern usage (where relevant).
 * Personal thoughts; I much prefer the "A Philosophy of Software Design" or the CUPID patterns to the ones suggested here.
+
+## Chapter 17 - Smells and Heuristics
+* Comments
+  * C1: Innapropriate Information
+    * Information should be held in another system (source control, issue tracking)
+  * C3: Redundant Comment
+    * Something the code itself already describes well enough
+    * Agreed, but author need to be aware of who your audience is.
+    * Something which is obvious to you may be confusing for the reader (seniority level, domain experience, team experience)
+  * E1: Build Requires more than One Step
+    * With Docker, CI, etc; I don't really see this as issue?
+    * Likely a relic of the time (lots of manual deployments)
+  * F1: Too many function arguments
+    * Strongly agree! I find 3 to be the general "max", but sometimes exceptions
+  * F4: Dead Functions
+    * These are often hard to detect without automated tools, but agreed.
+  * G2: Obvious Behaviour Is Unimplemented
+    * Agreed! Feels like obvious bad black box design here.
+    * Functions can be writen with a current-vision corrupted perspective.
+  * G3: Incorrect Behaviour at the Boundaries
+    * Agreed; same as above.
+  * G6: Code at Wrong Level of Abstraction
+    * Agreed; good system/city design!
+  * G8: Too Much Information
+    * Using complexity as a lens to analyze if we have the right black boxes & separation/composition is interesting
+  * G10: Vertical separation
+    * Definitions should be close to their usage.
+    * Agreed; under-appreciated how much this helps cognitive load.
+  * 
