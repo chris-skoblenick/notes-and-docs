@@ -210,4 +210,12 @@
   * G10: Vertical separation
     * Definitions should be close to their usage.
     * Agreed; under-appreciated how much this helps cognitive load.
+  * G11: Inconsistency
+    * "If you do something in a certain wait, do all similar things in the same way."
+    * VERY strongly agree. This is subtly hard to do right, but the payoffs are very large when done correctly.
+  * G13: Artifical Coupling
+    * "Things that don’t depend upon each other should not be artificially coupled. For example, general enums should not be contained within more specific classes because this forces the whole application to know about these more specific classes."
+    * Generally failures here signal a failure of project organizations standards
+    * Don't be lazy! Put things where they belong, not where it's most convenient.
   * 
+    
