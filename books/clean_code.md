@@ -217,5 +217,14 @@
     * "Things that don’t depend upon each other should not be artificially coupled. For example, general enums should not be contained within more specific classes because this forces the whole application to know about these more specific classes."
     * Generally failures here signal a failure of project organizations standards
     * Don't be lazy! Put things where they belong, not where it's most convenient.
-  * 
+  * G14: Feature Envy
+    * Interesting method of identifying where we have the wrong black-boxes.
+    * If something's behaviour is highly depending on another object, maybe they belong together & split differently?
+  * G17: Misplaced Responsibility
+    * Are things where we expect them to be?
+    * High overlap with Inconsistency
+  * G18: Inappropriate Static
+    * I feel like this aged poorly; from an OO mindset, rather than multi-paradigm (functional)
+  * G22: Make Logical Dependencies Physical
+    * 
     
