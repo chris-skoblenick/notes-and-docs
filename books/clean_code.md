@@ -225,6 +225,26 @@
     * High overlap with Inconsistency
   * G18: Inappropriate Static
     * I feel like this aged poorly; from an OO mindset, rather than multi-paradigm (functional)
-  * G22: Make Logical Dependencies Physical
-    * 
+  * G23: Perfer Polymorphism to If/Else or Switch/Case
+    * I also feel like this has aged really poorly.
+  * G25: Replace Magic Numbers with named Constants
+    * I selectively agree with this.
+    * If something is only used in a single place, it feels like code bloat to define it using code constructs
+      * I would rather see a comment explaining why the value was chosen
+    * If I see a const definition; it mentally gears me up for multiple uses. 
+  * G29: Avoid Negative Conditionals
+    * I used to feel the same way, but do appreciate the brevity it brings
+    * I do think it's vital to be **clear** when using them; can lead to confusing code
+  * G31: Hidden Temporal Coupling
+    * Subtle, but important.
+    * I think this is an area where comments can also help, if using a functional decomposition
+  * G34: Functions Should Decend Only One Level of Abstraction
+    * I think this is a good heuristic to evaluate whether or not a decomposition is effect
+  * G35: Keep Configurable Data at High Levels
+    * I prefer taking this to an extreme, and putting it all in one place (named & located the same place!)
+  * N5: Use Long names for Long Scopes
+    * Interesting heuristic to help evaluation of names, and when long names are acceptable!
+  * N7: Names Should Describe Side-Effects
+    * I think this is hard to do in practice.
+    * I think this also would encourage more code churn; leaky abstractions?
     
