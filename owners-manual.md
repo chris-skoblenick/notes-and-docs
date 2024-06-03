@@ -58,9 +58,9 @@ Owners Manual v1.2
 - digging deeply into important, complex and nuanced issues.
 
 ## Strengths:
-- highly analytical; detail oriented.
-- works very well with abstract concepts and ideas.
-- very driven when there is beli and deeply focused, held for very long periods of time.
+- highly analytical and detail oriented, but able to relate & discuss very abstract concepts.
+- very driven when there is belief what we are doing is valuable
+- able to hold deep focus for long periods of time; does not fatigue with concepts easily.
 - solving problems: prioritizes results and truth over opinion and ego.
 - strives to over-communicate and find consensus.
 - saying what others in the room are feeling.
